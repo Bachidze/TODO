@@ -43,9 +43,57 @@ form.addEventListener('submit',(e)=>{
 
 
 function showtodo(arr){
+    function moonclick(){
+        document.body.style.backgroundColor = '#393A4B'
+        moon.style.transform = 'rotate(360deg)'
+        moon.style.transition = '1s'
+        moon.style.display = 'none'
+        moon.classList.add('moon1')
+        sun.style.display = 'block'
+        header.classList.add('dark')
+        input.style.backgroundColor = '#25273D'
+        input.classList.toggle('inputdark')
+        container2.style.backgroundColor = '#25273D'
+        div.style.backgroundColor = '#25273D'
+        image.style.backgroundColor = '#25273D'
+        li.style.color = 'white'
+        maincontainer.style.backgroundColor = '#25273D'
+        h6.style.color = 'white'
+        span.style.color = 'white'
+        h5.style.color = 'white'
+        container3.style.backgroundColor = '#25273D'
+        h2.style.color = 'white'
+        h3.style.color = 'white'
+        h4.style.color = 'white'
+        h1.style.color = '#25273D'
+    }
+
+    function lightclick(){
+        document.body.style.backgroundColor = '#9495A5'
+        sun.style.display = 'none'
+        moon.style.display = 'block'
+        header.classList.add('light')
+        input.style.backgroundColor = 'white'
+        input.classList.toggle('inputlight')
+        container2.style.backgroundColor = 'white'
+        div.style.backgroundColor = 'white'
+        image.style.backgroundColor = 'white'
+        li.style.color = '#25273D'
+        maincontainer.style.backgroundColor = 'white'
+        h6.style.color = 'gray'
+        span.style.color = 'gray'
+        h5.style.color = 'gray'
+        container3.style.backgroundColor = 'white'
+        h2.style.color = 'grey'
+        h3.style.color = 'grey'
+        h4.style.color = 'grey'
+        h1.style.color = 'white'
+    }
     ol.innerHTML = ''
     
     arr.forEach(el =>{
+
+    })    
         let div = document.createElement('div')
         let round = document.createElement('round')
         let image = document.createElement('image')
@@ -123,54 +171,6 @@ function showtodo(arr){
             li.classList.toggle('txt')
         })    
 
-        function moonclick(){
-            document.body.style.backgroundColor = '#393A4B'
-            moon.style.transform = 'rotate(360deg)'
-            moon.style.transition = '1s'
-            moon.style.display = 'none'
-            moon.classList.add('moon1')
-            sun.style.display = 'block'
-            header.classList.add('dark')
-            input.style.backgroundColor = '#25273D'
-            input.classList.toggle('inputdark')
-            container2.style.backgroundColor = '#25273D'
-            div.style.backgroundColor = '#25273D'
-            image.style.backgroundColor = '#25273D'
-            li.style.color = 'white'
-            maincontainer.style.backgroundColor = '#25273D'
-            h6.style.color = 'white'
-            span.style.color = 'white'
-            h5.style.color = 'white'
-            container3.style.backgroundColor = '#25273D'
-            h2.style.color = 'white'
-            h3.style.color = 'white'
-            h4.style.color = 'white'
-            h1.style.color = '#25273D'
-        }
-
-        function lightclick(){
-            document.body.style.backgroundColor = '#9495A5'
-            sun.style.display = 'none'
-            moon.style.display = 'block'
-            header.classList.add('light')
-            input.style.backgroundColor = 'white'
-            input.classList.toggle('inputlight')
-            container2.style.backgroundColor = 'white'
-            div.style.backgroundColor = 'white'
-            image.style.backgroundColor = 'white'
-            li.style.color = '#25273D'
-            maincontainer.style.backgroundColor = 'white'
-            h6.style.color = 'gray'
-            span.style.color = 'gray'
-            h5.style.color = 'gray'
-            container3.style.backgroundColor = 'white'
-            h2.style.color = 'grey'
-            h3.style.color = 'grey'
-            h4.style.color = 'grey'
-            h1.style.color = 'white'
-        }
-
-    })    
 }    
 
 showtodo(arr)
