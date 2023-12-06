@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Manrope:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Josefin sans;
+    background-color: #9495A5;
+    transition: 1s;
+}
+
+
+header{
+    background-image: url(./assets/Bitmap\ \(41\).svg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 220px;
+
+    padding: 48px 26px;   
+}
+
+
+
+
+ h1{
+    color: white;
+ }
+
+ .container2{
+    width: 327px;
+    height: 48px;
+    background: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 5px;
+ }
+
+ input{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: Josefin sans;
+    width: 260px;
+ }
+
+ .inputdarkomde{
+    background-color: #25273D;
+ }
+
+
+
+ .wre{
+    width: 25px;
+    height: 25px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 14px;
+ }
+
+ .list{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wre2{
+    width: 25px;
+    height: 25px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+
+
+
+
+.round{
+    background-image: url(./assets/Group\ 4\ \(3\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+
+.maincontainer{
+    width: 327px;
+    height: 46px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h5,h6{
+    color: #9495A5;
+    font-size: 12px;
+    font-weight: 400;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+.div2{
+    width: 327px;
+    height: 48px;
+    background-color: white;
+}
+
+image{
+    background-image: url(./assets/Combined\ Shape\ 2\ \(1\).svg);
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-top: 7px;
+}
+
+h2,h3,h4{
+    color: #9495A5;
+    font-size: 14px;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+h2:hover,h3:hover,h3:hover{
+    color: #3A7CFD;
+}
+ 
+
+.container3{
+    width: 327px;
+    height: 48px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.sun{
+    display: none;
+    cursor: pointer;
+}
+
+.moon{
+    cursor: pointer;
+}
+
+.dark{
+    background-image: url(./assets/Bitmap\ \(42\).svg);
+}
+
+.light{
+    background-image: url(./assets/Bitmap\ \(41\).svg);
+}
+
+
+.cursor{
+    cursor: pointer;
+}
+
+.lightmode{
+    background-color: white;
+
+}
+
+.inputdark{
+    color: white;
+}
+
+.inputlight{
+    color: gray;
+}
+
+.inputdark::placeholder{
+    color: white;
+}
+.inputlight::placeholder{
+    color: gray;
+}
+
+.txt{
+    color: gray;
+    text-decoration: line-through;
+}
