@@ -28,6 +28,7 @@ moon.classList.add('mode')
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault()
+    console.log('shemodis?')
     arr.push({
         id:id,
         text:input.value,
@@ -93,7 +94,6 @@ function showtodo(arr){
     
     arr.forEach(el =>{
 
-    })    
         let div = document.createElement('div')
         let round = document.createElement('round')
         let image = document.createElement('image')
@@ -106,8 +106,8 @@ function showtodo(arr){
         
         
         image.addEventListener('click',()=>{
-            div.style.display = 'none'
-            span.textContent = id -= 1 
+           deleteTodo(el.id)
+           span.textContent -= id
         })
         sun.addEventListener('click',()=>{
             lightclick()
@@ -117,18 +117,18 @@ function showtodo(arr){
             moonclick()
         })
 
-
+        
         h6.addEventListener('click',()=>{
             div.style.display = 'none'
             span.textContent = '0'
         })
         
         div.style.display = 'flex'
-        div.style.justifyContent = 'start'
+        div.style.justifyContent = 'space-between'
         div.style.alignItems = 'center'
         div.style.gap = '10px'
         div.style.width = '327px'
-        div.style.height = '48px'
+        div.style.height = 'auto'
         div.style.backgroundColor = 'white'
         div.style.borderRadius = '5px'
         div.style.wordBreak = 'break-all'
@@ -143,9 +143,14 @@ function showtodo(arr){
         round.style.marginLeft = '20px'
         round.style.marginRight = '14px'
         round.style.cursor = 'pointer'
+
         
         
         let li = document.createElement('li')
+        li.style.textAlign = 'left'
+        li.style.padding = '15px 0'
+        li.style.width = '230px'
+        li.classList.add('dashoreba')
         
         
         
@@ -163,21 +168,33 @@ function showtodo(arr){
         
         h2.addEventListener('click',()=>{
             round.classList.toggle('round')
-            li.classList.toggle('txt')
-        })    
 
+        })    
+        wre.addEventListener('click',()=>{
+            round.classList.toggle('round')
+            wre.classList.toggle('check')
+        })    
+        
         round.addEventListener('click',()=>{
             round.classList.toggle('round')
             li.classList.toggle('txt')
         })    
+        
+    })    
+    }    
 
-}    
+
 
 showtodo(arr)
 
 
 
+function deleteTodo(id){
+    arr = arr.filter(el => el.id !== id)
 
+    localStorage.setItem('todos', JSON.stringify(arr))
+    showtodo(arr)
+}
 
 
     

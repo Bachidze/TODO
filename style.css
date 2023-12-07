@@ -67,6 +67,7 @@ header{
     border-radius: 50%;
     margin-left: 20px;
     margin-right: 14px;
+    cursor: pointer;
  }
 
  .list{
@@ -207,3 +208,11 @@ h2:hover,h3:hover,h3:hover{
     color: gray;
     text-decoration: line-through;
 }
+
+.check{
+    background-image: url(./assets/Group\ 4\ \(3\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
